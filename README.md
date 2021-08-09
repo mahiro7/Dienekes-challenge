@@ -1,20 +1,12 @@
-# Challenge
+# Dienekes Challenge
 
-To start your Phoenix server:
+To execute the project:
 
   * Install dependencies with `mix deps.get`
+  * Configure your database in config/dev.exs
   * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
-"# dienekes-challenge" 
+  * Start IEx and start Phoenix endpoint with `iex -S mix phx.server`
+  * Start the Dienekes' API requests with `Challenge.start`
+  * Await process to beign done `i.e. :ok`
+  * GET `localhost:4000/api/list/:page` to get numbers
+  * **WARNING**: GET on `localhost:4000/api/list` will return **ALL** numbers
